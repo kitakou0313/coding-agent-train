@@ -12,4 +12,5 @@ Repo for Coding Agent test
 - clineでのpermissionの掛け方
     - https://code.claude.com/docs/en/security を読む
 - subagentについて調べる
+    - https://code.claude.com/docs/en/sub-agents
 - Skillについて調べる
