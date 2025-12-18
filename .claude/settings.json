@@ -1,4 +1,5 @@
 {
+  "defaultMode": "default",
   "permissions": {
     "ask": [
       "Read(*)"
