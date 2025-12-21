@@ -14,3 +14,4 @@ Repo for Coding Agent test
 - subagentについて調べる
     - https://code.claude.com/docs/en/sub-agents
 - Skillについて調べる
+    - https://code.claude.com/docs/ja/skills
