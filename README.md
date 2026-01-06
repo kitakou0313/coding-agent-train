@@ -20,6 +20,7 @@ Repo for Coding Agent test
 # ToDo
 - clineでのpermissionの掛け方
     - https://code.claude.com/docs/en/security を読む
+    - https://code.claude.com/docs/en/iam#permission-system を読む
 - subagentについて調べる
     - https://code.claude.com/docs/en/sub-agents
 - Skillについて調べる

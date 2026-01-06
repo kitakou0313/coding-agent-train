@@ -2,7 +2,9 @@
   "defaultMode": "default",
   "permissions": {
     "ask": [
-      "Read(*)"
+      "Read(*)",
+      "Edit(*)",
+      "Bash"
     ]
   }
 }
