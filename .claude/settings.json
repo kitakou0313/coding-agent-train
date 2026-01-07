@@ -1,5 +1,5 @@
 {
-  "defaultMode": "default",
+  "defaultMode": "plan",
   "permissions": {
     "ask": [
       "Read(*)",
