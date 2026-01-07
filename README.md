@@ -17,6 +17,10 @@ Repo for Coding Agent test
 - 違い
     - Skillが関数、Sub Agentが別プロセスのイメージ
 
+# 資料
+- https://code.claude.com/docs/en/settings
+    - 設定の一覧
+
 # ToDo
 - clineでのpermissionの掛け方
     - https://code.claude.com/docs/en/security を読む
@@ -25,3 +29,4 @@ Repo for Coding Agent test
     - https://code.claude.com/docs/en/sub-agents
 - Skillについて調べる
     - https://code.claude.com/docs/ja/skills
+- hookについて調べる
