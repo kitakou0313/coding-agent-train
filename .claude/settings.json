@@ -1,10 +1,22 @@
 {
-  "defaultMode": "plan",
   "permissions": {
     "ask": [
       "Read(*)",
       "Edit(*)",
       "Bash"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'Hello! from Hook'"
+          }
+        ]
+      }
     ]
   }
 }
