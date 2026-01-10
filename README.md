@@ -22,6 +22,7 @@ Repo for Coding Agent test
     - https://code.claude.com/docs/en/hooks#security-considerations
         - セキュリティのリファレンス
     - https://code.claude.com/docs/en/hooks#hook-output
+        - stdout, stderrの取り扱い
 
 # 資料
 - https://code.claude.com/docs/en/settings
