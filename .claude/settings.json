@@ -13,7 +13,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "echo 'Hello! from Hook'"
+            "command": "PROCESS_NAME='vscode'; ps x | grep \"$PROCESS_NAME\" > /dev/null && echo \"${PROCESS_NAME} is running\" || echo \"${PPROCESS_NAME} is not running.\""
           }
         ]
       }
