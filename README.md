@@ -23,6 +23,7 @@ Repo for Coding Agent test
         - セキュリティのリファレンス
     - https://code.claude.com/docs/en/hooks#hook-output
         - stdout, stderrの取り扱い
+    - コマンドをバックグラウンド実行する場合は、stdout, stderrを破棄した上でバックグラウンド実行する（なんで？）
 
 # 資料
 - https://code.claude.com/docs/en/settings
