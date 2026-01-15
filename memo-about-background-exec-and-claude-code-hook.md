@@ -103,6 +103,45 @@ vscode    2964  1.1  0.7 1148152 63024 pts/1   Sl   05:50   0:00      \_ http-se
 ```
 
 
+### '{}'でコマンドを囲む -> 子プロセスとして実行される + stdout,stderrが元プロセスに向く
+```
+$ /bin/sh -c '{ npx http-server; }'
+Starting up http-server, serving ./
+
+http-server version: 14.1.1
+
+http-server settings: 
+CORS: disabled
+Cache: 3600 seconds
+Connection Timeout: 120 seconds
+Directory Listings: visible
+AutoIndex: visible
+Serve GZIP Files: false
+Serve Brotli Files: false
+Default File Extension: none
+
+Available on:
+  http://127.0.0.1:8080
+  http://172.17.0.2:8080
+Hit CTRL-C to stop the server
+
+
+```
+
+```
+vscode     888  0.0  0.1  11408  8276 pts/1    Ss   08:24   0:00          \_ /bin/bash --init-file ...
+vscode    1722  0.0  0.0   2384  1432 pts/1    S+   08:28   0:00          |   \_ /bin/sh -c { npx http-server; }
+vscode    1723  2.1  1.2 1469184 97804 pts/1   Sl+  08:28   0:00          |       \_ npm exec http-server
+vscode    1735  0.0  0.0   2388  1432 pts/1    S+   08:28   0:00          |           \_ sh -c "http-server"
+vscode    1736  0.2  0.7 1143284 61752 pts/1   Sl+  08:28   0:00          |               \_ http-server
+```
+
+### '{}'でコマンドを囲む+バックグラウンド実行する -> 実行できない
+```
+/bin/sh -c '{ npx http-server &; }'
+```
+
+
 ## 推測メモ
 - shの実装として、バックグラウンドプロセスのstdout, stderrを待つ
     - stdout, stderrに何が接続されているのかを管理しており、子プロセスから送信されるものがなくなるまで実行される
